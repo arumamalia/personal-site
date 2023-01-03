@@ -1,0 +1,158 @@
+.about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 55px;
+}
+
+.name-about-me {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 36px;
+    color: #F9BA32;
+}
+
+.job-about-me {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #2F3131;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    /* gap: 7px; */
+}
+
+.font-location {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    color: #426E86;
+}
+
+.logo-location {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    max-height: 35px;
+}
+
+.btn-hire-me {
+    width: 128.7px;
+    height: 42.68px;
+    background: #426E86;
+    border-radius: 6.67089px;
+    border: none;
+}
+
+.btn-hire-me:hover{
+    background-color: #3c6378;
+    color: white;
+    cursor: pointer;
+}
+
+.font-hire-me {
+    font-size: 20.0127px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn-dwnld {
+    height: 43.983158111572266px;
+    width: 187.74273681640625px;
+    left: 151.37744140625px;
+    top: 0px;
+    border-radius: 6.793262958526611px;
+    border: 1.69832px solid #426E86;
+    background: none;
+}
+
+.btn-dwnld:hover{
+    background-color: #3c6378;
+    color: white;
+    cursor: pointer;
+}
+
+.font-dwnld {
+    font-weight: 500;
+    font-size: 20.3798px;
+    line-height: 27px;
+    color: #426E86;
+    text-align: center;
+}
+
+.name-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.profile-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 72px;
+}
+
+.btn-about-me {
+    display: flex;
+    height: 73.983158111572266px;
+    align-items: center;
+    gap: 22.67px;
+}
+
+.button-image {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button-image:hover {
+    cursor: pointer;
+}
+
+.up-down {
+	-webkit-animation: up-down 1s linear infinite alternate both;
+	animation: up-down 1s linear infinite alternate both;
+}
+
+@keyframes up-down {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width:1024px)
+{
+    .about-me {
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+}

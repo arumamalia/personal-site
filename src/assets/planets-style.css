@@ -1,0 +1,311 @@
+.planets {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1324px;
+  height: 360.55px;
+  gap: 68px;
+}
+
+.sun {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  align-self: end;
+  left: 0;
+  bottom: 0;
+}
+
+.sun-flex {
+  position: absolute;
+}
+
+.rotate-sun-bright {
+	-webkit-animation: rotate-sun-bright 70s linear infinite;
+	animation: rotate-sun-bright 70s linear infinite;
+}
+
+@-webkit-keyframes rotate-sun-bright {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-sun-bright {
+  0% {
+    -webkit-transform: rotate(0);
+     transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-sun-flex {
+	-webkit-animation: rotate-sun-flex 70s linear infinite;
+	animation: rotate-sun-flex 70s linear infinite;
+}
+
+@-webkit-keyframes rotate-sun-flex {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-sun-flex {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.experience-planet {
+  margin-bottom: 63.29px;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  -ms-transform: scale(.96); 
+  -webkit-transform: scale(.96); 
+  transform: scale(.96); 
+}
+
+.experience-planet-main {
+  width: 100px;
+}
+
+.experience-planet:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+.education-planet {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  margin-bottom: 104.55px;
+  -ms-transform: scale(.96); 
+  -webkit-transform: scale(.96); 
+  transform: scale(.96); 
+}
+
+.education-planet-main {
+  width: 157px;
+}
+
+.education-planet:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+/* .education-planet-in {
+  z-index: -1;
+}
+
+.education-planet-out {
+  position: absolute;
+} */
+
+.expertise-planet {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 116.58px;
+  width: 103px;
+  -ms-transform: scale(.96); 
+  -webkit-transform: scale(.96); 
+  transform: scale(.96); 
+
+}
+
+.expertise-planet-main {
+  width: 115px;
+}
+
+.expertise-planet:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+.languages-planet{
+  position: relative;
+  height: fit-content;
+  width: 98.66px;
+  margin-bottom: 69.55px;
+  -ms-transform: scale(.96); 
+  -webkit-transform: scale(.96); 
+  transform: scale(.96); 
+}
+
+.languages-planet-main {
+  width: 103px;
+}
+
+.languages-planet:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+.achievements-planet{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: fit-content;
+  margin-bottom: 36.55px;
+  width: 200px;
+  -ms-transform: scale(.96); 
+  -webkit-transform: scale(.96); 
+  transform: scale(.96); 
+}
+
+.achievements-planet-main {
+  width: 260px;
+}
+
+.achievements-planet:hover {
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+.volunteer-planet{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: fit-content;
+  width: 90px;
+  margin-bottom: 115.33px;
+  transform: scale(.96)
+}
+
+.volunteer-planet-main{
+  width: 90px;
+}
+
+.volunteer-planet:hover{
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1); 
+  transform: scale(1); 
+  /* cursor: pointer; */
+}
+
+.shake-vertical-up {
+	-webkit-animation: shake-vertical-up 2s linear infinite alternate both;
+	animation: shake-vertical-up 2s linear infinite alternate both;
+}
+
+@keyframes shake-vertical-up {
+  0% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake-vertical-up {
+  0% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+}
+
+.shake-vertical-down {
+	-webkit-animation: shake-vertical-down 2s linear infinite alternate both;
+	animation: shake-vertical-down 2s linear infinite alternate both;
+}
+
+@keyframes shake-vertical-down {
+  0% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake-vertical-down {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.tag-planet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+}
+
+.sub-planet {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.sub-planet:hover .tag-planet {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.font-planet {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.arrow-tag {
+  height: 75px;
+}
+
+.sub-planet.active > .tag-planet {
+  opacity: 1;
+  color: #F9BA32;
+}

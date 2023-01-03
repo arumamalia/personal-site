@@ -1,0 +1,131 @@
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    padding: 0px;
+    width: 1324px;
+    height: 100%;
+}
+
+.display-aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: -575px;
+    margin-bottom: 50px;
+    
+}
+
+.desc-aboutme {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 22px;
+    gap: 25px;
+    background: #F8F1E5;
+}
+
+.font-24-semibold {
+    font-weight: 600;
+    font-size: 24px;
+    color: #426E86;
+    width: 100%;
+}
+
+.periode-aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 287px;
+    background: #426E86;
+    border-radius: 53px;
+}
+
+.date-periode-aboutme {
+    font-weight: 400;
+    font-size: 20.2051px;
+    line-height: 30px;
+    color: #F8F1E5;
+}
+
+.list-aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1198px;
+}
+
+.star {
+    top: 0;
+}
+
+.list-aboutme-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+.list-aboutme-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+}
+
+.periode-aboutme-right {
+    filter: drop-shadow(7px 9px 8px rgba(0, 0, 0, 0.25));
+}
+
+.periode-aboutme-left {
+    filter: drop-shadow(-7px 9px 8px rgba(0, 0, 0, 0.25));
+}
+
+.desc-aboutme-left {
+    padding-right: 27px;
+    padding-left: 27px;
+    filter: drop-shadow(2px -2px 6px rgba(0, 0, 0, 0.06)) drop-shadow(-7px 7px 20px rgba(0, 0, 0, 0.15));
+}
+
+.desc-aboutme-right {
+    padding-left: 27px;
+    padding-right: 27px;
+    filter: drop-shadow(7px 7px 20px rgba(0, 0, 0, 0.15)) drop-shadow(-2px -2px 6px rgba(0, 0, 0, 0.06));
+}
+
+.title-aboutme-left {
+    text-align: right;
+}
+
+.major-aboutme-left {
+    text-align: right;
+}
+
+.gpa {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #426E86;
+}
+
+.list-activities {
+    margin-left: 27px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #426E86;
+}
+
+.desc-univ {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+

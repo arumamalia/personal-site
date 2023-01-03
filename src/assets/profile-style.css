@@ -1,0 +1,274 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8F1E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.nav-item{
+    color: #2F3131;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 17px;
+}
+
+.nav{
+    display: flex;
+    gap: 8px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.header{
+    background-color: #F8F1E5;
+    z-index: 10;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 0px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header-item{
+    margin: 0 auto;
+    max-width: 1119px;
+    width: 100%;
+    height: 66px;
+}
+
+.fixed-top{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+.profile{
+    min-height: 100vh;
+}
+
+.profile-pic {
+    position: relative;
+}
+
+.profile-desc{
+    display: flex;
+    flex-direction: column;
+    width: 565px;
+    height: 243.21px;   
+    margin: 0px;
+    flex: none;
+    padding: 0px;
+    gap: 39px;
+}
+
+.name{
+    color: #F9BA32;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.desc{
+    color: #303030;
+    font-size: 18px;
+}
+
+
+.greet{
+    margin-top: auto;
+    color: #2F3131;
+    font-size: 40px;
+    height: 42px;
+}
+
+.button{
+    color: white;
+    background-color: #426E86;
+    border: none;
+    padding: 8px 27px;
+    /* width: auto; */
+    height: 39.21px;
+    border-radius: 6.08514px;
+    font-style: normal;
+    font-weight: 500;   
+}
+
+.button:hover{
+    background-color: #1a3f53;
+    color: white;
+    cursor: pointer;
+}
+
+.greet::before{
+    content: 'Halo, saya \a';
+    white-space: pre;
+    -webkit-animation: change-greet 20s ease-in infinite both;
+    animation: change-greet 20s ease-in infinite both;
+}
+
+.rotate {
+	-webkit-animation: rotate 2s linear infinite alternate both;
+	animation: rotate 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+  }
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+                transform: rotate(10deg);
+    }
+}
+  
+
+@keyframes change-greet{
+    0% {
+        content: 'Halo, saya \a';
+    }
+    10% {
+        content: 'Hallo, ich bin \a';
+    }
+    20% {
+        content: 'Bonjour, je suis \a';
+    }
+    30% {
+        content: 'Hei, olen \a';
+    }
+    40% {
+        content: 'Hallo, ik ben \a';
+    }
+    50% {
+        content: 'Hola soy \a';
+    }
+    60% {
+        content: 'Ciao sono \a';
+    }
+    70% {
+        content: 'こんにちは私は \a';
+    }
+    80% {
+        content: '안녕하세요, 저는 \a';
+    }
+    90% {
+        content: 'Olá eu sou \a';
+    }
+    100% {
+        content: 'Olá eu sou \a';
+    }
+}
+
+.card-name{
+    background: #F8F1E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100000px;    
+    padding: 4px;
+    width: 194px;
+    height: 53px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    right: 267px;
+}
+
+.img-small{
+    width: 45px;
+    height: 45px;
+    border-radius: 100000px;
+}
+
+.job-name{
+    color: #2F3131;
+    margin-left: 9px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.name-small{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    line-height: 18px;
+}
+
+.job{
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    line-height: 12px;
+}
+
+.shake-vertical {
+	-webkit-animation: shake-vertical 2s linear infinite alternate both;
+	animation: shake-vertical 2s linear infinite alternate both;
+}
+
+@keyframes shake-vertical {
+    0% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake-vertical {
+    0% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media only screen and (max-width:1024px)
+{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .profile-desc{
+        width: 400px;
+    }
+}
