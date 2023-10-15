@@ -3,22 +3,31 @@
         <div class="star-path">
             <img src="../components/icons/path-languages.svg">
         </div>
-        <div class="display-languages">
-            <div class="list-aboutme list-languanges-right">
+        <div class="display-aboutme">
+            <div class="list-aboutme">
+                <div class="container-desc-left">
+                </div>
                 <div class="star">
                     <img src="../components/icons/star-2.svg">
                 </div>
-                <div class="desc-aboutme desc-aboutme-right">
-                    <p class="font-32-semibold">English - Upper Intermediate</p>
-                </div>
+                <div class="container-desc-right">
+                    <div class="desc-aboutme desc-aboutme-right">
+                        <p class="font-16-semibold">English - Upper Intermediate</p>
+                    </div>
+                </div>  
             </div>
-            <div class="list-aboutme list-languanges-left">
-                <div class="desc-aboutme desc-aboutme-left">
-                    <p class="font-32-semibold major-aboutme-left">Bahasa Indonesia - Native</p>
-                </div>
+            <div class="list-aboutme">
+                <div class="container-desc-left">
+                    <div class="desc-aboutme desc-aboutme-right">
+                        <p class="font-16-semibold">Bahasa Indonesia - Native</p>
+                    </div>
+                </div>    
                 <div class="star">
-                    <img src="../components/icons/star-1.svg">
+                    <img src="../components/icons/star-2.svg">
                 </div>
+                <div class="container-desc-right">
+                </div>
+                        
             </div>
         </div>
     </div>

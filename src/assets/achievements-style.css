@@ -1,37 +1,14 @@
-.periode-achievements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 170px;
-    background: #426E86;
-    border-radius: 53px;
-}
-
-.list-achievements-right {
-    display: flex;
-    justify-content: flex-end;
-    gap: 45px;
-}
-.list-achievements-left {
-    display: flex;
-    justify-content: flex-start;
-    gap: 45px;
-}
-
-.font-24-medium {
+.font-16-medium {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
     color: #426E86;
-    width: 100%;
+    width: max-content;
+    overflow-wrap: break-word;
 }
 
-.font-32-semibold {
+.font-18-semibold {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 18px;
     color: #426E86;
-    width: 100%;
+    width: max-content;
 }

@@ -118,6 +118,11 @@
     cursor: pointer;
 }
 
+.path-exp {
+    margin-left: 175px;
+    rotate: 1deg;
+}
+
 .up-down {
 	-webkit-animation: up-down 1s linear infinite alternate both;
 	animation: up-down 1s linear infinite alternate both;

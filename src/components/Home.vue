@@ -1,3 +1,9 @@
+<script setup>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import { ref } from 'vue';
+</script>
+
 <template>
   <div class="container profile">
     <div class="profile-desc">
@@ -6,7 +12,7 @@
         <p class="name">Arum Amalia</p>
       </div>
       <div>
-        <p class="desc">An independent and highly-motivated Back End Developer with experience in software developing.
+        <p class="desc">An independent and highly-motivated Developer with experience in software programming.
         </p>
       </div>
       <div>
@@ -21,7 +27,7 @@
           <img class="img-small" src="./icons/fotopic.svg">
           <div class="job-name">
             <p class="name-small">Arum Amalia</p>
-            <p class="job">Back End Developer</p>
+            <p class="job">Front End Developer</p>
           </div>
         </div>
       </router-link>
@@ -36,7 +42,7 @@
           <p class="coal-font">My</p>
           <p class="yellow-font">Services</p>
         </div>
-        <p class="desc-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a malesuada risus.</p>
+        <p class="desc-font">Provide development, innovation, collaboration, and creativity in Information Technology sector.</p>
       </div>
     </div>
     <div class="group-services">
@@ -44,8 +50,7 @@
         <div class="sub-services be-sub-services">
           <img class="icon" src="./icons/BE-icon.svg">
           <p class="job-services">Back End</p>
-          <p class="job-desc-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a malesuada
-            risus.</p>
+          <p class="job-desc-services">PHP, Javascript, Golang, SQL Server, Postman.</p>
         </div>
       </div>
 
@@ -53,15 +58,13 @@
         <div class="sub-services fe-sub-services">
           <img class="icon" src="./icons/FE-icon.svg">
           <p class="job-services">Front End</p>
-          <p class="job-desc-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a malesuada
-            risus.</p>
+          <p class="job-desc-services">HTML, CSS, jQuery, Vue.js, CodeIgniter.</p>
         </div>
 
         <div class="sub-services uiux-sub-services">
           <img class="icon" src="./icons/UI-UX-icon.svg">
           <p class="job-services">UI/UX</p>
-          <p class="job-desc-services">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a malesuada
-            risus.</p>
+          <p class="job-desc-services">Figma</p>
         </div>
       </div>
     </div>
@@ -79,35 +82,163 @@
           <p id="my">My</p>
           <p id="projects">Projects</p>
         </div>
-        <p class="desc-title-projects">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a malesuada
-          risus.</p>
-      </div>
-    </div>
-
-    <div class="content-area">
-      <div class="sub-content">
-        <img class="arrow-left arrow" src="./icons/arrow-left.svg">
-        <div class="list-content">
-          <img src="./icons/content1.svg">
-          <img src="./icons/content2.svg">
-          <img src="./icons/content3.svg">
-        </div>
-        <img class="arrow-right arrow" src="./icons/arrow-right.svg">
-      </div>
-
-      <div class="scroll-wrapper">
-        <div class="scroll-bar">
-        </div>
       </div>
     </div>
   </div>
 
+  <div class="d-flex align-items-center">
+    <button class="btn" @click="prev(); adjust_scrollbar_prev();">
+      <img src="../components/icons/arrow-left.svg">
+    </button>
+    <Carousel :wrap-around="true" :breakpoints="breakpoints" class="wrap" ref="navigation">
+        <Slide v-for="slide in slides" :key="slide.id" >
+            <div class="carousel__item slide-item">
+              <img :src = slide.image >
+            </div>
+          </Slide> 
+                
+        <template #addons>
+          <div class="nav-page">
+            <Pagination />
+          </div>
+
+        </template>
+      </Carousel>
+      <button class="btn" @click="next(); adjust_scrollbar_next();">
+        <img src="../components/icons/arrow-right.svg">
+      </button>
+  </div>
+
+  <br>
+
+  <!-- <div class="scroll-wrapper">
+    <div class="long-scrollbar scrollbar"></div>
+    <div class="short-scrollbar-wrapper">
+      <div class="short-scrollbar scrollbar" :style="{  width: scrollbar + 'px' }" ></div>
+    </div>
+  </div> -->
+
 </template>
 
-<script>
-export default {
-  name: "Home"
+<style>
+
+.slide {
+  box-shadow: 0 6px 15px -3px rgb(0 0 0/0.3);
+  padding: 25px;
+  border-radius: 5px;
+  background: rgb(202, 202, 202);
+  color: #000;
 }
+
+.carousel__item {
+  min-height: 200px;
+  font-size: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__slide {
+  /* padding: 10px; */
+}
+
+.carousel__prev,
+.carousel__next {
+  /* box-sizing: content-box; */
+  /* border: 5px solid white; */
+}
+
+.nav-item{
+  /* display: flex;
+  gap: 200px; */
+}
+
+.wrap{
+  width: 1000px;
+}
+
+.nav-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
+  background-color: #F9BA32;
+}
+
+.carousel__pagination-button::after {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+
+</style>
+
+<script>
+const navigation = ref(null);
+
+export default {
+  name: "App",
+  data: () => ({   
+    currentSlide: 0,
+    breakpoints: {
+      // 700px and ups
+      700: {
+        itemsToShow: 3.5,
+        snapAlign: 'center',
+      },
+      // 1024 and up
+      1024: {
+        itemsToShow: 3,
+        snapAlign: 'center',
+      },
+    },
+    contentIndex: 0,
+    slides:  [
+      { id: '1', image: require('./icons/content1.svg')},
+      { id: '2', image: require('./icons/content2.svg')},
+      { id: '3', image: require('./icons/content3.svg')},
+      { id: '4', image: require('./icons/content2.svg')},
+      { id: '5', image: require('./icons/content3.svg')},
+      { id: '6', image: require('./icons/content1.svg')},
+      { id: '7', image: require('./icons/content2.svg')},
+      { id: '8', image: require('./icons/content1.svg')},
+    ],
+    long_scrollbar_width: 744,
+    adjust_scrollbar: 0,
+    scrollbar: 0
+  }),
+  methods: {
+    next () {
+      navigation.value.next();
+    },
+    prev() {
+      navigation.value.prev();
+    },
+    adjust_scrollbar_prev () {
+     this.adjust_scrollbar = this.long_scrollbar_width / this.slides.length
+     if (this.scrollbar > this.adjust_scrollbar) {
+       this.scrollbar -= this.adjust_scrollbar 
+     } else {
+        this.scrollbar = this.long_scrollbar_width
+     }
+    },
+    adjust_scrollbar_next () {
+     this.adjust_scrollbar = this.long_scrollbar_width / this.slides.length
+     if (this.scrollbar < this.long_scrollbar_width) {
+      this.scrollbar += this.adjust_scrollbar 
+     } else {
+      this.scrollbar = this.adjust_scrollbar
+     }
+    }
+
+  },
+  mounted(){
+    this.scrollbar = this.long_scrollbar_width / this.slides.length;
+  },
+  updated(){
+    console.log(this.scrollbar);
+  }
+};
 </script>
-
-

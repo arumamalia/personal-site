@@ -1,4 +1,5 @@
 <script setup>
+import Experience from '../components/Experience.vue'
 import Education from '../components/Education.vue'
 import Achievements from '../components/Achievements.vue'
 import Expertise from '../components/Expertise.vue'
@@ -8,11 +9,11 @@ import Volunteer from '../components/Volunteer.vue'
 
 <template>
   <div class="container about-me">
-    <img src="../components/icons/fotopic.svg">
+    <img width="356" src="../components/icons/fotopic.svg">
     <div class="profile-about-me">
       <div class="name-job">
         <p class="name-about-me">ARUM AMALIA</p>
-        <p class="job-about-me">Back End Developer</p>
+        <p class="job-about-me">Front End Developer</p>
       </div>
       <div class="location">
         <div class="logo-location">
@@ -23,7 +24,7 @@ import Volunteer from '../components/Volunteer.vue'
         <p class="font-location">Jakarta, Indonesia</p>
       </div>
       <div>
-        <button class="button" data-bs-toggle="modal" data-bs-target="#myModal">Hire Me</button>
+        <button class="button" data-bs-toggle="modal" data-bs-target="#myModal">Contact Me</button>
       </div>
     </div>
   </div>
@@ -33,65 +34,83 @@ import Volunteer from '../components/Volunteer.vue'
       <img class="rotate-sun-bright" src="../components/icons/sun-bright.svg">
       <img class="sun-flex rotate-sun-flex" src="../components/icons/sun-flex.svg">
     </div>
-    <div class="experience-planet sub-planet" >
+    <div class="experience-planet sub-planet shake-vertical-up" :class="{ active: active === 'experience' }">
       <div class="tag-planet">
         <p class="font-planet">Experience</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
-      <button class="button-image">
-        <img class="experience-planet-main shake-vertical-up" src="../components/icons/experience-planet.svg">
+      <button class="button-image" @click="setActive('experience')">
+        <img class="experience-planet-main" src="../components/icons/experience-planet.svg">
       </button>
     </div>
 
-    <div class="education-planet sub-planet" :class="{ active: active === 'education' }">
+    <div class="education-planet sub-planet shake-vertical-down" :class="{ active: active === 'education' }">
       <div class="tag-planet">
         <p class="font-planet">Education</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
       <button class="button-image" @click="setActive('education')">
-        <img class="education-planet-main shake-vertical-down" src="../components/icons/education.svg">
+        <img class="education-planet-main" src="../components/icons/education.svg">
       </button>
     </div>
-    <div class="expertise-planet sub-planet" :class="{ active: active === 'expertise' }">
+    <div class="expertise-planet sub-planet shake-vertical-up" :class="{ active: active === 'expertise' }">
       <div class="tag-planet">
         <p class="font-planet">Expertise</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
       <button class="button-image" @click="setActive('expertise')">
-        <img class="expertise-planet-main shake-vertical-up" src="../components/icons/expertise-planet.svg">
+        <img class="expertise-planet-main" src="../components/icons/expertise-planet.svg">
       </button>
     </div>
-    <div class="languages-planet sub-planet" :class="{ active: active === 'languages' }">
+    <div class="languages-planet sub-planet shake-vertical-down" :class="{ active: active === 'languages' }">
       <div class="tag-planet">
         <p class="font-planet">Languages</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
       <button class="button-image" @click="setActive('languages')">
-        <img class="languages-planet-main shake-vertical-down" src="../components/icons/languages-planet.svg">
+        <img class="languages-planet-main" src="../components/icons/languages-planet.svg">
       </button>
     </div>
-
-    <div class="achievements-planet sub-planet" :class="{ active: active === 'achievements' }">
+    <div class="achievements-planet sub-planet shake-vertical-up" :class="{ active: active === 'achievements' }">
       <div class="tag-planet">
         <p class="font-planet">Achievements</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
       <button class="button-image" @click="setActive('achievements')">
-        <img class="achievements-planet-main shake-vertical-up" src="../components/icons/achievements-planet.svg">
+        <img class="achievements-planet-main" src="../components/icons/achievements-planet.svg">
       </button>
     </div>
-    <div class="volunteer-planet sub-planet" :class="{ active: active === 'volunteer' }">
+    <div class="volunteer-planet sub-planet shake-vertical-down" :class="{ active: active === 'volunteer' }">
       <div class="tag-planet">
         <p class="font-planet">Volunteer</p>
-        <img class="arrow-tag" src="../components/icons/line.svg">
+        <div class="arrow-tag">
+          <div class="bullet-tag"></div>
+          <div class="line-tag"></div>
+        </div>
       </div>
       <button class="button-image" @click="setActive('volunteer')">
-        <img class="volunteer-planet-main shake-vertical-down" src="../components/icons/volunteer-planet.svg">
+        <img class="volunteer-planet-main" src="../components/icons/volunteer-planet.svg">
       </button>
     </div>
   </div>
 
   <div>
+    <Experience :show="active === 'experience'" />
     <Achievements :show="active === 'achievements'" />
     <Education :show="active === 'education'" />
     <Expertise :show="active === 'expertise'" />
@@ -101,17 +120,11 @@ import Volunteer from '../components/Volunteer.vue'
 
 </template>
 
-
 <script>
 
 export default {
   data() {
     return {
-      // showAchievements: false,
-      // showEducation: false,
-      // showExpertise: false,
-      // showLanguages: false,
-      // showVolunteer: false,
       active: ""
     }
   },
@@ -123,10 +136,9 @@ export default {
         this.active = type
       }
     }
-  },
-  mounted() {
-    // this.active = 'education'
   }
 }
 
 </script>
+
+

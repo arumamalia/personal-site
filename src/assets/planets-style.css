@@ -98,7 +98,6 @@
   -ms-transform: scale(1); 
   -webkit-transform: scale(1); 
   transform: scale(1); 
-  /* cursor: pointer; */
 }
 
 .education-planet {
@@ -121,16 +120,7 @@
   -ms-transform: scale(1); 
   -webkit-transform: scale(1); 
   transform: scale(1); 
-  /* cursor: pointer; */
 }
-
-/* .education-planet-in {
-  z-index: -1;
-}
-
-.education-planet-out {
-  position: absolute;
-} */
 
 .expertise-planet {
   position: relative;
@@ -279,8 +269,9 @@
 .tag-planet {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 3px; */
   opacity: 0;
+  align-items: center;
 }
 
 .sub-planet {
@@ -301,11 +292,42 @@
   line-height: 36px;
 }
 
+.bullet-tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2F3131;
+  /* opacity: 0; */
+}
+
+.line-tag {
+  width: 1.92px;
+  height: 60px;
+  background: #2F3131;
+  /* opacity: 0; */
+}
+
 .arrow-tag {
-  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sub-planet.active > .tag-planet {
   opacity: 1;
   color: #F9BA32;
 }
+
+.sub-planet.active > .tag-planet > .arrow-tag > .bullet-tag {
+  /* opacity: 1; */
+  background: #F9BA32;
+  transition: all 0.5s ease;
+}
+
+.sub-planet.active > .tag-planet > .arrow-tag > .line-tag {
+  /* opacity: 1; */
+  background: #F9BA32;
+  transition: all 0.5s ease;
+}
+
+

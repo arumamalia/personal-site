@@ -1,4 +1,4 @@
-.tag{
+.tag {
     width: 46px;
     height: 10px;
     font-weight: 600;
@@ -86,7 +86,7 @@
 }
 
 .mail:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .modal-dialog {
@@ -142,4 +142,8 @@
 .btn-send:hover {
     background-color: #f9c451;
     color: #426E86;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #426E86 inset !important;
 }

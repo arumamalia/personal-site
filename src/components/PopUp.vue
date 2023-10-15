@@ -17,13 +17,11 @@
                                         <div class="group-half">
                                             <div class="form-half">
                                                 <label class="tag">Name</label>
-                                                <input class="form-control" type="text" v-model="name" id="name"
-                                                    name="name">
+                                                <input class="form-control" type="text" v-model="name" id="name" name="name">
                                             </div>
                                             <div class="form-half">
                                                 <label class="tag">Email</label>
-                                                <input class="form-control" type="email" v-model="email" id="email"
-                                                    name="email">
+                                                <input class="form-control" type="email" v-model="email" id="email" name="email">
                                             </div>
                                         </div>
                                         <div class="group-full-sub">

@@ -2,57 +2,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 75px;
+    justify-content:flex-start;
+    /* margin-top: 25px; */
     padding: 0px;
     width: 1324px;
-    height: 100%;
+    /* height: auto; */
+    /* height: fit-content; */
+    position: relative;
 }
 
 .display-aboutme {
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    margin-top: -575px;
-    margin-bottom: 50px;
-    
+    position: absolute;
+    gap: 50px;    
+    margin-top: 25px;
 }
 
 .desc-aboutme {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
-    width: 540px;
+    width: max-content;
     height: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
     border-radius: 22px;
     gap: 25px;
     background: #F8F1E5;
 }
 
-.font-24-semibold {
+.font-16-semibold {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     color: #426E86;
-    width: 100%;
+    width: max-content;
 }
 
 .periode-aboutme {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 287px;
+    height: max-content;
+    padding: 5px 30px;
+    width: max-content;
+    line-height: 18px;
     background: #426E86;
     border-radius: 53px;
 }
 
 .date-periode-aboutme {
     font-weight: 400;
-    font-size: 20.2051px;
+    font-size: 14px;
     line-height: 30px;
     color: #F8F1E5;
 }
@@ -62,22 +60,11 @@
     flex-direction: row;
     justify-content: center;
     width: 1198px;
+    gap: 35px;
 }
 
 .star {
     top: 0;
-}
-
-.list-aboutme-left {
-    display: flex;
-    justify-content: flex-start;
-    gap: 35px;
-}
-
-.list-aboutme-right {
-    display: flex;
-    justify-content: flex-end;
-    gap: 35px;
 }
 
 .periode-aboutme-right {
@@ -89,19 +76,23 @@
 }
 
 .desc-aboutme-left {
-    padding-right: 27px;
-    padding-left: 27px;
+    align-items: end;
+    padding: 15px 40px;
     filter: drop-shadow(2px -2px 6px rgba(0, 0, 0, 0.06)) drop-shadow(-7px 7px 20px rgba(0, 0, 0, 0.15));
 }
 
 .desc-aboutme-right {
-    padding-left: 27px;
-    padding-right: 27px;
+    align-items: start;
+    padding: 15px 40px;
     filter: drop-shadow(7px 7px 20px rgba(0, 0, 0, 0.15)) drop-shadow(-2px -2px 6px rgba(0, 0, 0, 0.06));
 }
 
 .title-aboutme-left {
     text-align: right;
+}
+
+.title-aboutme-right {
+    text-align: left;
 }
 
 .major-aboutme-left {
@@ -110,15 +101,14 @@
 
 .gpa {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 36px;
     color: #426E86;
 }
 
 .list-activities {
-    margin-left: 27px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 36px;
     color: #426E86;
 }
@@ -127,5 +117,17 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.container-desc-left {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+}
+
+.container-desc-right {
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
 }
 

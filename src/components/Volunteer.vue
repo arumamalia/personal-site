@@ -1,32 +1,40 @@
 <template>
     <div v-show="show" class="container-2">
         <div class="star-path">
-            <img src="../components/icons/star-path-edu.svg">
+            <img src="../components/icons/path-languages.svg">
         </div>
         <div class="display-aboutme">
-            <div class="list-aboutme list-aboutme-left">
-                <div class="desc-aboutme desc-aboutme-left">
-                    <p class="font-32-semibold title-aboutme-left">Udayana peduli</p>
-                    <p class="font-24-medium major-aboutme-left">Dedicated myself in fundraising and mentoring victims of Mount Agung eruption</p>
+            <div class="list-aboutme">
+                <div class="container-desc-left">
+                    <div class="desc-aboutme desc-aboutme-left">
+                        <div class="font-18-semibold">Udayana peduli</div>
+                        <div class="font-16-medium">Dedicated myself in fundraising and mentoring victims of Mount Agung eruption</div>
+                    </div>
                 </div>
                 <div class="star">
                     <img src="../components/icons/star-1.svg">
                 </div>
-                <div class="periode-aboutme periode-aboutme-right">
-                    <p class="date-periode-aboutme">Sept 2017 - Nov 2017</p>
+                <div class="container-desc-right">
+                    <div class="periode-aboutme periode-aboutme-right">
+                        <div class="date-periode-aboutme">Sept 2017 - Nov 2017</div>
+                    </div>
                 </div>
             </div>
             <div class="list-aboutme list-aboutme-right">
-                <div class="periode-aboutme periode-aboutme-left">
-                    <p class="date-periode-aboutme">Sep 2017 - Jun 2018</p>
+                <div class="container-desc-left">
+                    <div class="periode-aboutme periode-aboutme-left">
+                        <div class="date-periode-aboutme">Sep 2017 - Jun 2018</div>
+                    </div>
                 </div>
                 <div class="star">
                     <img src="../components/icons/star-2.svg">
                 </div>
-                <div class="desc-aboutme desc-aboutme-right">
-                    <p class="font-32-semibold">Udayana Mengajar</p>
-                    <p class="font-24-medium">Dedicated myself to improving the quality of educating in rural villages
-                    </p>
+                <div class="container-desc-right">
+                    <div class="desc-aboutme desc-aboutme-right">
+                        <div class="font-18-semibold">Udayana Mengajar</div>
+                        <div class="font-16-medium">Dedicated myself to improving the quality of educating in rural villages
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
