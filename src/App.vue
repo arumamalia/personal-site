@@ -39,7 +39,7 @@ import PopUp from './components/PopUp.vue'
       
       <div class="bottom-footer">
         <p id="copy">&copy;</p>
-      <p class="by">2022 designed by arum amalia</p>
+      <p class="by">{{ new Date().getFullYear() }} designed by arum amalia</p>
     </div>
   </footer>
 </main>
@@ -47,12 +47,16 @@ import PopUp from './components/PopUp.vue'
 </template>
 
 <script>
-//importing bootstrap 5
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.min.js";
+
 import { RouterLink } from 'vue-router';
 export default {
-    components: { RouterLink }
+  components: { RouterLink },
+  data() {
+    return {
+      currYear: new Date().getFullYear(),
+    };
+  },
 }
+
 </script>
 

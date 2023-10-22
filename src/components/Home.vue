@@ -117,13 +117,6 @@ import { ref } from 'vue';
 
   <br>
 
-  <!-- <div class="scroll-wrapper">
-    <div class="long-scrollbar scrollbar"></div>
-    <div class="short-scrollbar-wrapper">
-      <div class="short-scrollbar scrollbar" :style="{  width: scrollbar + 'px' }" ></div>
-    </div>
-  </div> -->
-
 </template>
 
 <style>
