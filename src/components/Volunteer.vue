@@ -8,7 +8,7 @@
                 <div class="container-desc-left">
                     <div class="desc-aboutme desc-aboutme-left">
                         <div class="font-18-semibold">Udayana peduli</div>
-                        <div class="font-16-medium">Dedicated myself in fundraising and mentoring victims of Mount Agung eruption</div>
+                        <div class="font-16-medium major-aboutme-left">Dedicated myself in fundraising and mentoring victims of Mount Agung eruption</div>
                     </div>
                 </div>
                 <div class="star">

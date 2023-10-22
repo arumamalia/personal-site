@@ -47,7 +47,7 @@ import { ref } from 'vue';
     </div>
     <div class="group-services">
       <div class="group-services1">
-        <div class="sub-services be-sub-services">
+        <div class="sub-services be-sub-services rotate-center">
           <img class="icon" src="./icons/BE-icon.svg">
           <p class="job-services">Back End</p>
           <p class="job-desc-services">PHP, Javascript, Golang, SQL Server, Postman.</p>
@@ -55,13 +55,13 @@ import { ref } from 'vue';
       </div>
 
       <div class="group-services2">
-        <div class="sub-services fe-sub-services">
+        <div class="sub-services fe-sub-services rotate-center">
           <img class="icon" src="./icons/FE-icon.svg">
           <p class="job-services">Front End</p>
           <p class="job-desc-services">HTML, CSS, jQuery, Vue.js, CodeIgniter.</p>
         </div>
 
-        <div class="sub-services uiux-sub-services">
+        <div class="sub-services uiux-sub-services rotate-center">
           <img class="icon" src="./icons/UI-UX-icon.svg">
           <p class="job-services">UI/UX</p>
           <p class="job-desc-services">Figma</p>
@@ -93,7 +93,13 @@ import { ref } from 'vue';
     <Carousel :wrap-around="true" :breakpoints="breakpoints" class="wrap" ref="navigation">
         <Slide v-for="slide in slides" :key="slide.id" >
             <div class="carousel__item slide-item">
-              <img :src = slide.image >
+              <img width="325" :src = slide.image >
+              <div class="slide-title">
+                <div class="slide-role">
+                  <p class="slide-role__text">{{ slide.role }}</p>
+                </div>
+                <p class="slide-title__text">{{ slide.title }}</p>
+              </div>
             </div>
           </Slide> 
                 
@@ -131,7 +137,7 @@ import { ref } from 'vue';
 }
 
 .carousel__item {
-  min-height: 200px;
+  position: relative;
   font-size: 20px;
   border-radius: 8px;
   justify-content: center;
@@ -196,14 +202,9 @@ export default {
     },
     contentIndex: 0,
     slides:  [
-      { id: '1', image: require('./icons/content1.svg')},
-      { id: '2', image: require('./icons/content2.svg')},
-      { id: '3', image: require('./icons/content3.svg')},
-      { id: '4', image: require('./icons/content2.svg')},
-      { id: '5', image: require('./icons/content3.svg')},
-      { id: '6', image: require('./icons/content1.svg')},
-      { id: '7', image: require('./icons/content2.svg')},
-      { id: '8', image: require('./icons/content1.svg')},
+      { id: '1', image: require('./icons/LOS.png'), title: 'LOS CMS', role: 'FE'},
+      { id: '2', image: require('./icons/portraiture.png'), title: 'Portraiture', role: 'BE'},
+      { id: '3', image: require('./icons/paradise-project.png'), title: 'Paradise Project', role: 'UI'},
     ],
     long_scrollbar_width: 744,
     adjust_scrollbar: 0,
