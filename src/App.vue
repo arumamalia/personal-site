@@ -1,15 +1,13 @@
 <script setup>
-// import Home from './components/Home.vue'
 import PopUp from './components/PopUp.vue'
 
 </script>
 
-
-<template>
+<template id="desktop">
   <header class="header fixed-top">
     <div class="container header-item" id="app">
       <router-link to="/">
-        <img src="./assets/Logo.svg" alt="Logo">
+        <img src="./assets/Logo.svg" alt="Logo" id="logo">
       </router-link>
       
       <div class="nav">
@@ -17,13 +15,11 @@ import PopUp from './components/PopUp.vue'
         <router-link to="/aboutme" class="nav-item">ABOUT ME</router-link>
         <router-link to="/contactme" class="nav-item" data-bs-toggle="modal" data-bs-target="#myModal">CONTACT ME</router-link>
       </div>
-      <!-- <b-button id="show-btn" @click="showModal">Open Modal</b-button> -->
     </div>
   </header>
   <router-view/>
   
   <main>
-    <!-- <Home /> -->
     <PopUp />
     
     <footer class="footer">
@@ -34,7 +30,6 @@ import PopUp from './components/PopUp.vue'
         <a href="https://github.com/arumamalia" target="_blank">
           <img class="social-media-logo" src="./components/icons/github-log.svg">
         </a>
-        <!-- <img class="social-media-logo" src="./components/icons/gmail-logo.svg"> -->
       </div>
       
       <div class="bottom-footer">
