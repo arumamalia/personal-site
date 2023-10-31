@@ -23,7 +23,7 @@
                                     <li>Learning new programming languages such as CSS, HTML, jQuery, PHP, et cetera</li>
                                     <li>Implementing my new skills to the projects</li>
                                     <li>Maintaining the existing website</li>
-                                    <li>Improving company website due to the increasing traffic using updated technologie</li>
+                                    <li>Improving company website due to the increasing traffic using updated technologies</li>
                                     <li>Implementing query of database SQL on my work</li>
                                     <li>Developing website according to the requirements</li>
                                 </ul>
