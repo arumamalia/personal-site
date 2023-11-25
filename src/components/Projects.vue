@@ -92,7 +92,7 @@
                             <div class="modal-projects">
                                 <div class="full-desc">
                                     <h4 class="text-center">CMS</h4>
-                                    <span class="desc-project text-justify">A Content Management System (CMS) is a user-friendly tool that helps employee to add, edit, and publish data on database.</span>
+                                    <span class="desc-project text-justify">A Content Management System (CMS) is a user-friendly tool that helps employee to add and edit data, then publishing on website.</span>
                                     <br>
                                     <br>
                                     <span class="font-role">Role: Front End Developer</span>
