@@ -53,12 +53,12 @@
                             <div class="modal-projects">
                                 <div class="full-desc">
                                     <h4 class="text-center">Portraiture</h4>
-                                    <span class="desc-project text-justify">This is an platform for photographer to showcase their work and also manage their photoshoot project from planning and create estimate budget.</span>
+                                    <span class="desc-project text-justify">This is an platform for photographer to showcase their work and also manage their photoshoot project from planning and create estimate budget</span>
                                     <br>
                                     <br>
                                     <span class="font-role">Role: Back End Developer</span>
                                     <br>
-                                    <span class="font-role">Tech: Node.js, Express.js, My SQL, AWS</span>
+                                    <span class="font-role">Tech: Node.js, Express.js, My SQL, AWS.</span>
                                 </div>
                                 <br>
                                 <div class="img-project">
@@ -97,7 +97,7 @@
                                     <br>
                                     <span class="font-role">Role: Front End Developer</span>
                                     <br>
-                                    <span class="font-role">Tech: JQuery, Code Igniter</span>
+                                    <span class="font-role">Tech: JQuery, Code Igniter.</span>
                                 </div>
                                 <br>
                                 <div class="img-project">
