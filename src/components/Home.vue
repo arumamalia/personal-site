@@ -92,7 +92,7 @@ import { ref } from 'vue';
     </button>
     <Carousel :wrap-around="true" :breakpoints="breakpoints" class="wrap" ref="navigation">
         <Slide v-for="slide in slides" :key="slide.id" >
-            <div class="carousel__item slide-item">
+            <div class="carousel__item slide-item" data-bs-toggle="modal" :data-bs-target="slide.modal">
               <img width="325" :src = slide.image >
               <div class="slide-title">
                 <div class="slide-role">
@@ -182,12 +182,10 @@ export default {
   data: () => ({   
     currentSlide: 0,
     breakpoints: {
-      // 700px and ups
       700: {
         itemsToShow: 3.5,
         snapAlign: 'center',
       },
-      // 1024 and up
       1024: {
         itemsToShow: 3,
         snapAlign: 'center',
@@ -195,13 +193,10 @@ export default {
     },
     contentIndex: 0,
     slides:  [
-      { id: '1', image: require('./icons/LOS.png'), title: 'LOS CMS', role: 'FE'},
-      { id: '2', image: require('./icons/portraiture.png'), title: 'Portraiture', role: 'BE'},
-      { id: '3', image: require('./icons/paradise-project.png'), title: 'Paradise Project', role: 'UI'},
+      { id: '1', image: require('./icons/LOS.png'), title: 'CMS', role: 'FE', modal: '#project-cms'},
+      { id: '2', image: require('./icons/portraiture.png'), title: 'Portraiture', role: 'BE', modal: '#project-portraiture'},
+      { id: '3', image: require('./icons/paradise-project.png'), title: 'Paradise Project', role: 'UI', modal: '#project-paradise'},
     ],
-    long_scrollbar_width: 744,
-    adjust_scrollbar: 0,
-    scrollbar: 0
   }),
   methods: {
     next () {
@@ -210,29 +205,7 @@ export default {
     prev() {
       navigation.value.prev();
     },
-    adjust_scrollbar_prev () {
-     this.adjust_scrollbar = this.long_scrollbar_width / this.slides.length
-     if (this.scrollbar > this.adjust_scrollbar) {
-       this.scrollbar -= this.adjust_scrollbar 
-     } else {
-        this.scrollbar = this.long_scrollbar_width
-     }
-    },
-    adjust_scrollbar_next () {
-     this.adjust_scrollbar = this.long_scrollbar_width / this.slides.length
-     if (this.scrollbar < this.long_scrollbar_width) {
-      this.scrollbar += this.adjust_scrollbar 
-     } else {
-      this.scrollbar = this.adjust_scrollbar
-     }
-    }
 
-  },
-  mounted(){
-    this.scrollbar = this.long_scrollbar_width / this.slides.length;
-  },
-  updated(){
-    console.log(this.scrollbar);
   }
 };
 </script>

@@ -1,5 +1,6 @@
 <script setup>
 import PopUp from './components/PopUp.vue'
+import Projects from './components/Projects.vue'
 
 </script>
 
@@ -21,6 +22,7 @@ import PopUp from './components/PopUp.vue'
   
   <main>
     <PopUp />
+    <Projects />
     
     <footer class="footer">
       <div class="social-media">

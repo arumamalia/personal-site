@@ -99,16 +99,21 @@
 .form-close {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: 114.52px;
 }
 
-.close {
+.close-projects {
+    width: 105%;
+}
+
+/* .close {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
     height: 330.23px;
-}
+} */
 
 .close-img:hover {
     cursor: pointer;
@@ -118,7 +123,6 @@
     background-color: transparent;
     border-color: transparent;
 }
-
 
 .form-control {
     border: none;
@@ -143,6 +147,45 @@
     background-color: #f9c451;
     color: #426E86;
 }
+
+.popup-style-projects {
+    width: 1004.02px;
+    /* height: 330.23px; */
+    background: #426E86;
+    border-radius: 7px;
+}
+
+.container-popup-projects {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 100%;
+    /* gap: 26.63px; */
+}
+
+.modal-projects {
+    padding: 20px 150px 50px 150px;
+}
+
+.full-desc {
+    color: #F8F1E5;
+}
+
+.desc-project {
+    font-size: 14px;
+    /* text-align: justify; */
+}
+
+.img-project {
+    display: flex;
+    justify-content: center;
+}
+
+.font-role {
+    color:#f9c451;
+}
+
+.modal { overflow: auto !important; }
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #426E86 inset !important;
