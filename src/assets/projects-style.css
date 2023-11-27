@@ -124,6 +124,10 @@
     opacity: 1;
 }
 
+.slide-item {
+    cursor: pointer;
+}
+
 .rotate-center-360deg {
 	-webkit-animation: rotate-center-360deg 15s linear infinite both;
 	animation: rotate-center-360deg 15s linear infinite both;
