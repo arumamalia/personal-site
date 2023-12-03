@@ -10,20 +10,21 @@ import Projects from './components/Projects.vue'
       <router-link to="/">
         <img src="./assets/Logo.svg" alt="Logo" id="logo">
       </router-link>
-      
+
       <div class="nav">
         <router-link to="/" class="nav-item">HOME</router-link>
         <router-link to="/aboutme" class="nav-item">ABOUT ME</router-link>
-        <router-link to="/contactme" class="nav-item" data-bs-toggle="modal" data-bs-target="#myModal">CONTACT ME</router-link>
+        <router-link to="/contactme" class="nav-item" data-bs-toggle="modal" data-bs-target="#myModal">CONTACT
+          ME</router-link>
       </div>
     </div>
   </header>
-  <router-view/>
-  
+  <router-view />
+
   <main>
     <PopUp />
     <Projects />
-    
+
     <footer class="footer">
       <div class="social-media">
         <a href="https://www.linkedin.com/in/arum-amalia/" target="_blank">
@@ -33,14 +34,14 @@ import Projects from './components/Projects.vue'
           <img class="social-media-logo" src="./components/icons/github-log.svg">
         </a>
       </div>
-      
+
       <div class="bottom-footer">
         <p id="copy">&copy;</p>
-      <p class="by">{{ new Date().getFullYear() }} designed by arum amalia</p>
-    </div>
-  </footer>
-</main>
-
+        <p class="by">{{ new Date().getFullYear() }} designed by arum amalia</p>
+      </div>
+      <p class="bottom-dev by">develop using <img width="25" src="./assets/logo.png"> </p>
+    </footer>
+  </main>
 </template>
 
 <script>

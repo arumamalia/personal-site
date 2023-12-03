@@ -26,6 +26,15 @@
     width: 100%;
 }
 
+.bottom-dev {
+    margin-top: -75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9.5px;
+    width: 100%;
+}
+
 #copy {
     height: 11.752098083496094px;
     width: 12.5px;
