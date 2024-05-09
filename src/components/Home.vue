@@ -92,7 +92,7 @@ import { ref } from 'vue';
     </button>
     <Carousel :wrap-around="true" :breakpoints="breakpoints" class="wrap" ref="navigation">
         <Slide v-for="slide in slides" :key="slide.id" >
-            <div class="carousel__item slide-item" data-bs-toggle="modal" :data-bs-target="slide.modal">
+            <a class="carousel__item slide-item" :href= slide.link>
               <img width="325" :src = slide.image >
               <div class="slide-title">
                 <div class="slide-role">
@@ -100,7 +100,7 @@ import { ref } from 'vue';
                 </div>
                 <p class="slide-title__text">{{ slide.title }}</p>
               </div>
-            </div>
+            </a>
           </Slide> 
                 
         <template #addons>
@@ -193,9 +193,10 @@ export default {
     },
     contentIndex: 0,
     slides:  [
-      { id: '1', image: require('./icons/LOS.png'), title: 'CMS', role: 'FE', modal: '#project-cms'},
-      { id: '2', image: require('./icons/portraiture.png'), title: 'Portraiture', role: 'BE', modal: '#project-portraiture'},
-      { id: '3', image: require('./icons/paradise-project.png'), title: 'Paradise Project', role: 'UI', modal: '#project-paradise'},
+      { id: '1', image: require('./icons/age-calculator.png'), title: 'Age Calculator', role: 'FE', link: 'https://vue-age-calculator-six.vercel.app/'},
+      { id: '2', image: require('./icons/details-card.png'), title: 'Details Card', role: 'FE', link: 'https://vue-interactive-card-details.vercel.app/'},
+      { id: '3', image: require('./icons/faq.png'), title: 'FAQ Accordion', role: 'FE', link: 'https://vue-faq-accordion.vercel.app/'},
+      { id: '3', image: require('./icons/newsletter.png'), title: 'Newsletter Sign Up', role: 'FE', link: 'https://vue-newsletter-sign-up.vercel.app/'},
     ],
   }),
   methods: {
