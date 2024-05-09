@@ -92,7 +92,7 @@ import { ref } from 'vue';
     </button>
     <Carousel :wrap-around="true" :breakpoints="breakpoints" class="wrap" ref="navigation">
         <Slide v-for="slide in slides" :key="slide.id" >
-            <a class="carousel__item slide-item" :href= slide.link>
+            <a class="carousel__item slide-item"  target="_blank" :href= slide.link>
               <img width="325" :src = slide.image >
               <div class="slide-title">
                 <div class="slide-role">
