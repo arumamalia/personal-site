@@ -196,7 +196,8 @@ export default {
       { id: '1', image: require('./icons/age-calculator.png'), title: 'Age Calculator', role: 'FE', link: 'https://vue-age-calculator-six.vercel.app/'},
       { id: '2', image: require('./icons/details-card.png'), title: 'Details Card', role: 'FE', link: 'https://vue-interactive-card-details.vercel.app/'},
       { id: '3', image: require('./icons/faq.png'), title: 'FAQ Accordion', role: 'FE', link: 'https://vue-faq-accordion.vercel.app/'},
-      { id: '3', image: require('./icons/newsletter.png'), title: 'Newsletter Sign Up', role: 'FE', link: 'https://vue-newsletter-sign-up.vercel.app/'},
+      { id: '4', image: require('./icons/newsletter.png'), title: 'Newsletter Sign Up', role: 'FE', link: 'https://vue-newsletter-sign-up.vercel.app/'},
+      { id: '5', image: require('./icons/todo-app.png'), title: 'To Do App', role: 'FE', link: 'https://vue-todo-app-seven-sepia.vercel.app/'},
     ],
   }),
   methods: {
