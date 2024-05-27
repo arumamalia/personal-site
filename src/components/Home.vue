@@ -198,6 +198,7 @@ export default {
       { id: '3', image: require('./icons/faq.png'), title: 'FAQ Accordion', role: 'FE', link: 'https://vue-faq-accordion.vercel.app/'},
       { id: '4', image: require('./icons/newsletter.png'), title: 'Newsletter Sign Up', role: 'FE', link: 'https://vue-newsletter-sign-up.vercel.app/'},
       { id: '5', image: require('./icons/todo-app.png'), title: 'To Do App', role: 'FE', link: 'https://vue-todo-app-seven-sepia.vercel.app/'},
+      { id: '6', image: require('./icons/ip_address.png'), title: 'IP Address Tracker', role: 'FE', link: 'https://vue-ip-address-tracker-iota.vercel.app/'},
     ],
   }),
   methods: {
