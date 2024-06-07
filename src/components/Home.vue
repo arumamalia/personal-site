@@ -199,6 +199,7 @@ export default {
       { id: '4', image: require('./icons/newsletter.png'), title: 'Newsletter Sign Up', role: 'FE', link: 'https://vue-newsletter-sign-up.vercel.app/'},
       { id: '5', image: require('./icons/todo-app.png'), title: 'To Do App', role: 'FE', link: 'https://vue-todo-app-seven-sepia.vercel.app/'},
       { id: '6', image: require('./icons/ip_address.png'), title: 'IP Address Tracker', role: 'FE', link: 'https://vue-ip-address-tracker-iota.vercel.app/'},
+      { id: '7', image: require('./icons/rest_countries.png'), title: 'Rest Countries', role: 'FE', link: 'https://vue-rest-countries-five.vercel.app/'},
     ],
   }),
   methods: {
