@@ -151,7 +151,7 @@ body{
         content: 'Halo, saya \a';
     }
     10% {
-        content: 'Hallo, ich bin \a';
+        content: 'Hi, I am \a';
     }
     20% {
         content: 'Bonjour, je suis \a';
@@ -166,7 +166,7 @@ body{
         content: 'Hola soy \a';
     }
     60% {
-        content: 'Ciao sono \a';
+        content: 'Hallo, ich bin \a';
     }
     70% {
         content: 'こんにちは私は \a';
@@ -175,7 +175,7 @@ body{
         content: '안녕하세요, 저는 \a';
     }
     90% {
-        content: 'Olá eu sou \a';
+        content: 'Ciao sono \a';
     }
     100% {
         content: 'Olá eu sou \a';

@@ -5,51 +5,55 @@
                 <div class="sub-list-expertise">
                     <div class="list-expertise">
                         <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">Javascript - Node.js</div>
-                    </div>
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">PHP - Code Igniter</div>
-                    </div>
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">Golang - Echo</div>
-                    </div>
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">SQL - MySQL</div>
-                    </div>
-                </div>
-                <div class="sub-list-expertise">
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">NoSQL - Mongoose</div>
-                    </div>
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">AWS</div>
-                    </div>
-                    <div class="list-expertise">
-                        <img src="../components/icons/list-star.svg">
                         <div class="font-16-semibold">HTML</div>
                     </div>
                     <div class="list-expertise">
                         <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">CSS</div>
+                        <div class="font-16-semibold">PHP (Codeigniter)</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">Github</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">Agile Development</div>
                     </div>
                 </div>
                 <div class="sub-list-expertise">
                     <div class="list-expertise">
                         <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">Vue.js</div>
+                        <div class="font-16-semibold">Go-Lang (Echo)</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">SQL, MySQL</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">Ms Visual Studio</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">Git</div>
+                    </div>
+                </div>
+                <div class="sub-list-expertise">
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">CSS (Bootstrap, Tailwind)</div>
+                    </div>
+                    <div class="list-expertise">
+                        <img src="../components/icons/list-star.svg">
+                        <div class="font-16-semibold">Javascript (JQuery, Vue.js)</div>
                     </div>
                     <div class="list-expertise">
                         <img src="../components/icons/list-star.svg">
                         <div class="font-16-semibold">Figma</div>
-                    </div>
+                    </div>                    
                     <div class="list-expertise">
                         <img src="../components/icons/list-star.svg">
-                        <div class="font-16-semibold">Adobe Photoshop</div>
+                        <div class="font-16-semibold">Jira</div>
                     </div>
                 </div>
             </div>
